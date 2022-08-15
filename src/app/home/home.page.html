@@ -1,0 +1,88 @@
+<ion-content>
+
+  <div id="container">
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-lable>{{valor}}</ion-lable>
+        </ion-col>
+        <ion-col>
+          <ion-button color="success" expand="block" size="large " (click)="botaoLimpa('')"> C</ion-button>
+        </ion-col>
+
+      </ion-row>
+      <ion-row >
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('M')"> M</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('^2')"> ^2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('X.y')"> X.y</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('%')"> %</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('7')"> 7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('8')"> 8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('9')"> 9</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('+')"> +</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('4')"> 4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('5')"> 5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('6')"> 6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('-')"> -</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('3')"> 3</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('2')"> 2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('1')"> 1</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('*')"> *</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaoponto('.')"> .</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="block" size="large " (click)="mostrarvalor('0')"> 0</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('')">=</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="warning" expand="block" size="large " (click)="botaocalculo('/')"> /</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
